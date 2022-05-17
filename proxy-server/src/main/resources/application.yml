@@ -1,14 +1,3 @@
 spring:
-  cloud:
-    gateway:
-      routes:
-        - id: customer1
-          uri: http://localhost:8081/
-          predicates:
-            - Path=/customer/**
-        - id: product1
-          uri: http://localhost:8082/
-          predicates:
-            - Path=/product/**
   application:
     name: proxy-server
