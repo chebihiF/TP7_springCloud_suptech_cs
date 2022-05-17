@@ -5,10 +5,10 @@
       <list>
         <option value="$PROJECT_DIR$/customer-service/pom.xml" />
         <option value="$PROJECT_DIR$/product-service/pom.xml" />
-        <option value="$PROJECT_DIR$/bill/pom.xml" />
         <option value="$PROJECT_DIR$/config-server/pom.xml" />
         <option value="$PROJECT_DIR$/registry-server/pom.xml" />
         <option value="$PROJECT_DIR$/proxy-server/pom.xml" />
+        <option value="$PROJECT_DIR$/bill-service/pom.xml" />
       </list>
     </option>
   </component>
