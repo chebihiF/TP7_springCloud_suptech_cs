@@ -16,12 +16,18 @@ public class ProxyServerApplication {
         SpringApplication.run(ProxyServerApplication.class, args);
     }
 
-    //@Bean
+    @Bean
     RouteLocator routeLocator(RouteLocatorBuilder builder){
         return builder
                 .routes()
-                .route(r->r.path("/customers/**").uri("lb://CUSTOMER-SERVICE"))
-                .route(r->r.path("/products/**").uri("lb://PRODUCT-SERVICE"))
+                .route(r->r
+                        .path("/vlib/**")
+                        .uri("https://opendata.paris.fr/api/v2/")
+                )
+                .route(r->r
+                        .path("/posts/**")
+                        .uri("https://jsonplaceholder.typicode.com/posts")
+                )
                 .build();
     }
 
