@@ -11,6 +11,6 @@ import suptech.miag.billservice.model.Product;
 public interface ProductRestService {
     @GetMapping("/products")
     PagedModel<Product> pageProducts(@RequestParam(value = "page") int page, @RequestParam(value = "size") int size);
-    @GetMapping("/product/{ref}")
+    @GetMapping("/products/{ref}")
     Product getProductByRef(@PathVariable String ref);
 }
